@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="career-container">
+
+    <h1 class="career-title">Career Planner</h1>
+
+    <!-- IMPORTANT: Add form id -->
+    <form id="careerForm">
+
+        <div class="input-row">
+            <input type="text" id="skills" placeholder="Your Skills" required>
+            <input type="text" id="interests" placeholder="Your Interests" required>
+        </div>
+
+        <!-- Make button type submit -->
+        <button type="submit" class="generate-btn">
+            Generate Career Plan
+        </button>
+
+    </form>
+
+    <!-- IMPORTANT: ID must match JS -->
+    <div id="result" class="result-card"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

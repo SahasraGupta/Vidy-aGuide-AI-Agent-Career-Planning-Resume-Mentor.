@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analyzer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CSS (Important) -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Resume Analyzer</h2>
+
+    <form id="resumeForm">
+        <textarea 
+            id="resumeText" 
+            placeholder="Paste your resume here...">
+        </textarea>
+
+      <button type="submit" class="analyze-btn">Analyze Resume</button>
+    </form>
+
+    <div id="loading" style="display:none;">🤖 Analyzing resume with AI...</div>
+
+<div class="score-container">
+    <div class="score-bar">
+        <div id="scoreFill"></div>
+    </div>
+    <p id="scoreText"></p>
+</div>
+
+<div id="resumeResult" class="result-card"></div>
+
+<button id="downloadBtn" style="display:none;" class="analyze-btn">
+    Download Report
+</button>
+</div>
+
+
+<!-- Link JS -->
+<script src="/script.js"></script>
+
+</body>
+</html>
